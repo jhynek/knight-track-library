@@ -1,0 +1,32 @@
+{
+	"name": "jhynek/knight-track-library",
+	"description": "Provides tools for find shortest knights moves in chess.",
+	"license": "proprietary",
+	"type": "library",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"JHynek\\KnightTrack\\": "src/"
+		}
+	},
+	"require": {
+		"php": "~8.1"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^1.10.55",
+		"phpstan/phpstan-phpunit": "^1.3.15",
+		"phpstan/extension-installer": "^1.3.1",
+		"phpunit/phpunit": "^9.5"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"JHynek\\KnightTrack\\Tests\\": "tests/"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"phpstan/extension-installer": true
+		}
+	}
+}
